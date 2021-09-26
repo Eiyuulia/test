@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100vh;
+}
+
+.head-container {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: teal;
+}
+
+.type-container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 70%;
+
+}
+
+.main-container {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    margin-bottom: 50px;
+}

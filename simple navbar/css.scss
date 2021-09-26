@@ -1,0 +1,27 @@
+$font-white: rgb(240, 232, 232);
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 5%;
+    color: $font-white;
+    background-color: teal;
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: $font-white;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------- Global Selector -------------------------*/
+
+.page {
+    display: grid;
+    grid-template-rows: 2fr 6fr 2fr;
+    height: 100vh;
+}
+
+/* ----------------------- Intro -------------------------*/
+
+/* ----------------------- Round -------------------------*/
+
+#round {
+    display: none;
+}
+
+/* ----------------------- Round Result -------------------------*/
+
+#round-result {
+    display: none;
+}
+
+/* ----------------------- Game Result -------------------------*/
+
+#game-result {
+    display: none;
+}
+
+/* ----------------------- Stat -------------------------*/
+
+#stat {
+    display: none;
+}

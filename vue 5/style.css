@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10%;
+}
+
+.roundColor {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.kotak {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: pink;
+}

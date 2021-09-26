@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 209, 189);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    background-color: cornflowerblue;
+}
+
+#app h1 {
+    font-size: 5rem;
+}
+
+#app button {
+    width: 100px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#app button:hover {
+    background-color: black;
+}
+
+#app h2 {
+    font-size: 3rem;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="app.js" defer></script>
+    <title>RPS Game</title>
+</head>
+
+<body>
+    <div id="intro" class="page">
+        <div class="header">
+            <h1>Rock Paper Scissor Game</h1>
+        </div>
+        <div class="body">
+            <p>
+                Kau Telah dipilih sebagai manusia pilihan yg akan mengikuti olimpiade Rock Paper Scissor yg
+                diselenggarkan
+                puluhan tahun sekali. <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non praesentium rem animi, modi ut enim
+                suscipit,
+                expedita totam delectus aliquid incidunt reiciendis nulla quam sapiente commodi aperiam vitae obcaecati
+                esse
+                ab quia error quod. Consectetur pariatur, vel, dignissimos quia asperiores laboriosam labore harum
+                impedit
+                illo laborum repellendus repudiandae ullam debitis.
+            </p>
+        </div>
+        <div class="footer">
+            <button id="intro-btn">Continue</button>
+        </div>
+    </div>
+    <div id="round" class="page">
+        <div class="header">
+            <h1>
+                Round X
+            </h1>
+        </div>
+        <div class="body">
+            <div class="img" id="rock"><img src="" alt="Rock"></div>
+            <div class="img" id="scissor"><img src="" alt="Scissor"></div>
+            <div class="img" id="paper"><img src="" alt="paper"></div>
+        </div>
+        <div class="footer">
+            <button id="choose-rps-btn">
+                Choose
+            </button>
+        </div>
+    </div>
+    <div id="round-result" class="page">
+        <div class="header">
+            <h2>Round X</h2>
+            <h1>You X</h1>
+        </div>
+        <div class="body">
+            <div class="rps-vs" id="rps-vs-you">
+                <div class="img">
+                    <img src="" alt="Gunting">
+                </div>
+                <p>You</p>
+            </div>
+            <div class="rps-vs" id="rps-vs-enemy">
+                <div class="img">
+                    <img src="" alt="Kertas">
+                </div>
+                <p>Enemy</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="hitung">
+                3
+            </div>
+        </div>
+    </div>
+    <div id="game-result" class="page">
+        <div class="header">
+            <h1>You vs Enemy</h1>
+        </div>
+        <div class="body">
+            <div id="banner">
+                YOU WIN!
+            </div>
+        </div>
+        <div class="footer">
+            <button class="result-btn" id="continue">
+                Continue
+            </button>
+            <button class="result-btn" id="exit">
+                Exit
+            </button>
+        </div>
+    </div>
+    <div id="stat" class="page">
+        <div class="header">
+            <h1>Your Stat</h1>
+        </div>
+        <div class="body">
+            <div class="stat-result" id="win">
+                Win : x
+            </div>
+            <div class="stat-result" id="lose">
+                Lose : x
+            </div>
+        </div>
+        <div class="footer">
+            <button id="play-again">
+                Play Again
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

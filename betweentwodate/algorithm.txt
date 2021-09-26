@@ -1,0 +1,25 @@
+butuh input?                no
+apa saja yg di output?      hari nofap, jam, menit, dan detik
+
+
+1. buat variable yg berisi kapan last relapse date
+2. buat variable yg berisi today date
+
+variable time = elapse milisecond
+time = math.floor(time / 1000)                      // sekarang variable time berisi elapse secon
+
+if time > 86400
+var days = math.floor(time / 86400)                 // var days adalah berapa hari elapse
+time -= days * 86400                                // sekarang variable time sudah dikurangi lamanya hari
+
+if time > 3600
+var hour = math.floor(time / 3600)                  // var hour adalah berapa jam elapse
+time -= hour * 3600                                 // sekarang variable time sudah dikurangi lamanya jam
+
+if time > 60
+var minute = math.floor(time / 60)
+time -= minute
+
+
+
+

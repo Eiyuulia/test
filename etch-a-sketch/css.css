@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    --fontBlack: #333232;
+    --bcColor: #ECECED;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "left mid right";
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bcColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LEFT SIDE */
+
+#leftside {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftside p {
+    color: var(--fontBlack);
+}
+
+#chooseColor {
+    margin: 3%;
+}
+
+#leftside .sideChoose {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    margin: 5%;
+    font-size: 14px;
+}
+
+#leftside .sideChoose button {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    color: var(--fontBlack);
+    cursor: pointer;
+}
+
+/* MID SIDE */
+
+#midside {
+    grid-area: mid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#midside h1 {
+    margin-top: 20px;
+    font-size: 70px;
+    color: var(--fontBlack);
+}
+
+#canvas {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 70px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+/* Right Side */
+#rightside {
+    grid-area: right;
+}
+
+/* Hover */
+
+/* #leftside .sideChoose button:hover {
+    width: 220px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+} */

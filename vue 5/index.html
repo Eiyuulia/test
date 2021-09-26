@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Latihan vue 5</title>
+</head>
+
+<body>
+    <div id="app">
+        <h3>I am counting</h3>
+        <button @click="countMe">Count</button>
+        <p> {{count}}</p>
+        <br>
+        <br>
+        <h3>Siapa namamu?</h3>
+        <input v-model.lazy='name' type="text">
+        <p>Halo, {{name}}</p>
+        <br><br>
+        <h3>Apa kamu suka warna biru?</h3>
+        <input v-model='blueBoolean' type="checkbox"> Ya
+        <br>
+        <input v-model='fyou' type="checkbox"> F*** this question
+        <br><br>
+        <div v-if="!fyou" class="roundColor" :class="blueRound"></div>
+        <br><br>
+        <h3>Ini kotak</h3>
+        <div class="kotak" :class="blueRound"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

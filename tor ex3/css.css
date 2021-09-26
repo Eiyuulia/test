@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+}
+
+.h1 {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Section */
+
+section {
+    height: auto;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.add button {
+    padding: 5px 50px;
+    border: 1px solid teal;
+    color: whitesmoke;
+    background-color: teal;
+}
+
+.add button:hover {
+    background-color: rgb(0, 92, 92);
+    border: 1px solid rgb(0, 92, 92);
+    cursor: pointer;
+}
+
+.booklibrary {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 2%;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
