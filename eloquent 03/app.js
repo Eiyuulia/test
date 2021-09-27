@@ -23,3 +23,20 @@ function sum(arr){
     arr.forEach(e => total+=e)
     return total
 }
+
+function reverseArray(arr){
+    let arrR = []
+    for(let i=arr.length-1; i>=0; i--){
+        arrR.push(arr[i])
+    }
+    return arrR
+}
+
+function reverseArrayInPlace(arr){
+    let arrR = []
+    for(let i=arr.length-1; i>=0; i--){
+        arrR.push(arr[i])
+        arr.pop()
+    }
+    arrR.forEach(e => arr.push(e))
+}
