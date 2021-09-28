@@ -70,7 +70,7 @@ app.component('result',{
     `
     <div v-if="boolresult" id='result'>
         <h2>Result</h2>
-        <div class='year' v-for="(year,index) in toolsarray" :key="index">
+        <div class='year' v-for="(year,index) in arrYear" :key="index">
             <h4> Year {{index+1}}</h4>
             <p v-for="(int,index2) in arrInterest" :key="index2">
             {{int}}
@@ -78,14 +78,20 @@ app.component('result',{
         </div>
     </div>
     `,
-    props: {
+    props: {   
         boolresult: Boolean,
         toolsarray: Array,
     },
     data(){
         return{
-            arrInterest: this.toolsarray[0],
-            arrYear: this.toolsarray[1],
+        }
+    },
+    computed: {
+        arrYear(){
+            return this.toolsarray[1]
+        },
+        arrInterest(){
+            return this.toolsarray[0]
         }
     }
 })
