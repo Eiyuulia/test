@@ -9,6 +9,7 @@ const app = Vue.createApp({
     methods: {
         seeResult(array){
             this.toolsarray = array
+            this.toolsarray[0].unshift(0)
             this.boolresult = true
         }
     }
@@ -73,7 +74,7 @@ app.component('result',{
         <div class='year' v-for="(year,index) in arrYear" :key="index">
             <h4> Year {{index+1}}</h4>
             <p v-for="(int,index2) in arrInterest" :key="index2">
-            {{int}}
+            {{interest}}
             </p>
         </div>
     </div>
@@ -84,6 +85,10 @@ app.component('result',{
     },
     data(){
         return{
+            interest: [
+                'Normal saving: ',
+            ],
+            saving: []
         }
     },
     computed: {
@@ -91,6 +96,11 @@ app.component('result',{
             return this.toolsarray[1]
         },
         arrInterest(){
+            if (this.toolsarray[0].length >= 1){
+                for (let i=1;i<this.toolsarray[0].length;i++){
+                    this.interest.push(`Saving with ${this.toolsarray[0][i]}% interest: `)
+                }
+            }
             return this.toolsarray[0]
         }
     }
