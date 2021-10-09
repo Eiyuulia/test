@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141028;
+}
+
+h1 {
+    margin: 40px 0 20px 0;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: aliceblue;
+    text-align: center;
+}
+
+#survey-form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    color: #24D9F7;
+    background-color: #14152D;
+}
+
+#survey-form label {
+    display: block;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+#name {
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#email {
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#number {
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#dropdown {
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+}
+
+button {
+    display: block;
+    margin: 100px auto 10px auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #333;
+}

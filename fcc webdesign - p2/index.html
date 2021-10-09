@@ -11,6 +11,69 @@
 
 <body>
 
+    <h1 id="title">BurgerJacK Survey Form</h1>
+    <p>Our customer feedback is what makes us keep moving forward!</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="your name">
+        <br><br>
+
+        <label for="email" id="email-label">Email:</label>
+        <br>
+        <input type="email" id="email" placeholder="your email">
+        <br><br>
+
+        <label for="number" id="number-label">Customer Id:</label>
+        <br>
+        <input type="number" id="number" placeholder="your customer id (number only)">
+        <br><br>
+
+        <label for="dropdown" id="dropdown-label">What is your customer rank?</label>
+        <br>
+        <select name="dropdown" id="dropdown">
+            <option value="non" disabled>your rank</option>
+            <option value="pion">Pion</option>
+            <option value="jack">Jack</option>
+            <option value="queen">Queen</option>
+            <option value="king">King</option>
+        </select>
+        <br><br>
+
+        <label for="satisfaction">How is your satisfaction level:</label>
+        <br>
+        <input type="radio" name="satisfaction" id="bad">Bad
+        <br>
+        <input type="radio" name="satisfaction" id="nope">Nope
+        <br>
+        <input type="radio" name="satisfaction" id="mediocre">Mediocre
+        <br>
+        <input type="radio" name="satisfaction" id="good">Good
+        <br>
+        <input type="radio" name="satisfaction" id="great">Great
+        <br><br>
+
+        <label for="favourite">What is your favourite dish/drink:</label>
+        <br>
+        <input type="checkbox" name="chicken" id="chicken" value="chicken">Fried Chicken
+        <br>
+        <input type="checkbox" name="steak" id="steak" value="steak">Steak
+        <br>
+        <input type="checkbox" name="pizza" id="pizza" value="pizza">Pizza
+        <br>
+        <input type="checkbox" name="cola" id="cola" value="cola">Cola
+        <br>
+        <input type="checkbox" name="milk" id="milk" value="milk">Milk
+        <br><br>
+
+        <label for="feedback">Your personal feedback:</label>
+        <br>
+        <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="your additional feedback"></textarea>
+        <br><br>
+
+        <button id="submit">Submit</button>
+    </form>
 </body>
 
 </html>
