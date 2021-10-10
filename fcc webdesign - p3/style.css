@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 2%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f4f4f4;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #465062;
+}
+
+#logo img {
+    display: block;
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    padding: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    background-color: #333;
+}
+
+main {
+    width: 70%;
+    margin: 50px auto;
+}
+
+#main-img {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#feature {
+    width: 100%;
+    margin: 100px 0;
+}
+
+#feature h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feat {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.featleft {
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.featright {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    padding: 10px 20px;
+    background-color: rgb(97, 97, 97);
+}
+
+#immersive-video {
+    width: 100%;
+    margin: 100px 0;
+}
+
+#immersive-video h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#price {
+    width: 100%;
+    margin: 100px 0;
+    padding-left: 10%;
+}
+
+#price h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 50px;
+}
+
+#price p {
+    font-size: 20px;
+}
+
+#price p span {
+    font-size: 22px;
+    color: rgb(119, 179, 0);
+}
+
+#price form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: rgb(193, 253, 74);
+    color: #333;
+}
+
+#price form input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 20px 0;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#price #submit {
+    width: 40%;
+    padding-left: 0;
+}
+
+#submit:hover {
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 728px) {
+    main {
+        width: 90%;
+    }
+}
