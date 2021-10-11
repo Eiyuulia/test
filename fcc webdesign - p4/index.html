@@ -28,10 +28,11 @@
 
 
     <main id="main-doc">
-        <section class="main-section">
-            <header id="what-is-vuejs">What is Vue.js?</header>
-            <br><br>
 
+        <section class="main-section" id="first-main-section">
+            <header id="what-is-vuejs">What is Vue.js?</header>
+            <hr>
+            <br>
             <p>
                 Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other
                 monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core
@@ -44,34 +45,46 @@
                 <li>If you’d like to learn more about Vue before diving in, we created a video walking through the core
                     principles and a sample project.</li>
             </ul>
-            <br><br>
         </section>
+
         <section class="main-section">
             <header id="getting-started">Getting Started</header>
-            <br><br>
+            <hr>
+            <br>
             <div class="tip">
                 <span class="tip-head">TIP</span>
                 <br>
-                The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally
-                new to frontend development, it might not be the best idea to jump right into a framework as your first
-                step - grasp the basics then come back! Prior experience with other frameworks helps, but is not
-                required.
+                <p>
+                    The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are
+                    totally
+                    new to frontend development, it might not be the best idea to jump right into a framework as your
+                    first
+                    step - grasp the basics then come back! Prior experience with other frameworks helps, but is not
+                    required.
+                </p>
             </div>
             <br>
-            <p>
-                The easiest way to try out Vue.js is using the Hello World example (opens new window). Feel free to open
-                it in another tab and follow along as we go through some basic examples.
-            </p>
+            <ul>
+                <li>
+                    The easiest way to try out Vue.js is using the Hello World example (opens new window). Feel free to
+                    open
+                    it in another tab and follow along as we go through some basic examples.
+                </li>
+            </ul>
             <br>
-            <p>
-                The Installation page provides more options of installing Vue. Note: We do not recommend that beginners
-                start with vue-cli, especially if you are not yet familiar with Node.js-based build tools.
-            </p>
-            <br><br>
+            <ul>
+                <li>
+                    The Installation page provides more options of installing Vue. Note: We do not recommend that
+                    beginners
+                    start with vue-cli, especially if you are not yet familiar with Node.js-based build tools.
+                </li>
+            </ul>
         </section>
+
         <section class="main-section">
             <header id="declarative-rendering">Declarative Rendering</header>
-            <br><br>
+            <hr>
+            <br>
             <p>
                 At the core of Vue.js is a system that enables us to declaratively render data to the DOM using
                 straightforward template syntax:
@@ -84,7 +97,7 @@
     Counter: {{ counter }}
 </div>
             </textarea>
-            <br><br>
+            <br>
             <span class="code-head">js</span>
             <br>
             <textarea disabled cols="50" rows="10">
@@ -136,7 +149,7 @@ const Counter = {
     </span>
 </div>                  
             </textarea>
-            <br><br>
+            <br>
             <span class="code-head">js</span>
             <textarea disabled cols="50" rows="10">
 const AttributeBinding = {
@@ -157,11 +170,12 @@ Vue.createApp(AttributeBinding).mount('#bind-attribute')
                 "keep this element's title attribute up-to-date with the message property on the current active
                 instance."
             </p>
-            <br><br>
         </section>
+
         <section class="main-section">
             <header id="handling-user-input">Handling User Input</header>
-            <br><br>
+            <hr>
+            <br>
             <p>
                 To let users interact with your app, we can use the v-on directive to attach event listeners that invoke
                 methods on our instances:
@@ -229,8 +243,10 @@ const TwoWayBinding = {
 Vue.createApp(TwoWayBinding).mount('#two-way-binding')                  
             </textarea>
         </section>
+
         <section class="main-section">
             <header id="conditionals-and-loops">Conditionals and Loops</header>
+            <hr>
             <br>
             <p>
                 It's easy to toggle the presence of an element, too:
@@ -255,16 +271,17 @@ const ConditionalRendering = {
     
 Vue.createApp(ConditionalRendering).mount('#conditional-rendering')                  
             </textarea>
-            <br>
+            <br><br>
             <p>
                 This example demonstrates that we can bind data to not only text and attributes, but also the structure
                 of the DOM. Moreover, Vue also provides a powerful transition effect system that can automatically apply
                 transition effects when elements are inserted/updated/removed by Vue.
             </p>
-            <br><br>
         </section>
+
         <section class="main-section">
             <header id="composing-with-component">Composing with Component</header>
+            <hr>
             <br>
             <p>
                 The component system is another important concept in Vue, because it's an abstraction that allows us to
@@ -315,7 +332,7 @@ app.component('todo-item', {
     template: `<li>{{ todo.text }}</li>`
 })
             </textarea>
-            <br>
+            <br><br>
             <p>
                 Now we can pass the todo into each repeated component using v-bind:
             </p>
@@ -386,8 +403,21 @@ app.mount('#todo-list-app')
 </div>                  
             </textarea>
         </section>
-    </main>
 
+        <section class="main-section" id="last-main-section">
+            <header id="reference">Reference</header>
+            <hr>
+            <br>
+            <ul>
+                <li>
+                    This page get reference form <a
+                        href="https://v3.vuejs.org/guide/introduction.html#what-is-vue-js">Vue.js
+                        Documentation</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
 
 </body>
 

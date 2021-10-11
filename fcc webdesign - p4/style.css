@@ -13,7 +13,7 @@ body {
 nav {
     position: relative;
     width: 20%;
-    border-right: 3px solid black;
+    border-right: 3px solid grey;
 }
 
 #fix-nav {
@@ -24,9 +24,11 @@ nav {
 }
 
 nav header {
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #42B983;
 }
 
 #nav-links {
@@ -37,21 +39,47 @@ nav header {
 .nav-link {
     display: block;
     padding: 20px 0 20px 10px;
-    border-top: 1px solid;
+    border-top: 1px solid grey;
     text-decoration: none;
     color: #333;
 }
 
 #last-nav-link {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid grey;
 }
 
 main {
     width: 80%;
-    padding: 25px;
+    padding: 50px;
+    padding-top: 0;
+    line-height: 22px;
+}
+
+.main-section {
+    margin-top: 70px;
+}
+
+#first-main-section {
+    margin-top: 30px;
+}
+
+#last-main-section {
+    height: 500px;
+}
+
+#last-main-section a {
+    color: #42B983;
+    text-decoration: none;
+}
+
+.main-section ul {
+    padding-left: 40px;
 }
 
 main header {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 30px;
 }
 
@@ -66,4 +94,50 @@ textarea {
     width: 800px;
     padding-bottom: 20px;
     max-height: 600px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tip {
+    border: 2px dashed rgba(65, 184, 131, 0.5);
+    padding: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(65, 184, 131);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: 500px;
+        border-right: none;
+        border-bottom: 3px solid;
+    }
+
+    #fix-nav {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
