@@ -15,7 +15,7 @@ let bunga = 4
 
 console.log()
 console.log(`Uang yg ditabung tiap bulan: ${addComma(ditabung/12)}`)
-console.log(`Lama ditabung: ${tahun}`)
+console.log(`Lama ditabung: ${tahun} tahun`)
 console.log(`Persentase bunga tiap tahun: ${bunga}%`)
 console.log()
 
